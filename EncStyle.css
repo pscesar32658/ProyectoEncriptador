@@ -1,0 +1,192 @@
+*{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    overflow-y: hidden;
+    font-family: 'Roboto Mono', monospace;
+}
+
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background: rgb(234,255,223);
+    background: linear-gradient(180deg, rgba(234,255,223,0.9920343137254902) 84%, rgba(157,193,255,1) 100%);
+}
+
+.logo{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px 0 0 20px;
+    margin-left: 10px;
+    width: 10%;
+}
+
+main{
+    display: flex;
+    margin: 30px 0 10px 180px;
+}
+
+.text-area {
+    background: rgb(234,255,223);
+    height: 400px;
+    border: none;
+    color: #0A3871;
+    margin-top: 30px;
+    padding: 2px;
+    text-transform: lowercase;
+}
+::placeholder { color: #0A3871; }
+  .text-area:focus {
+      outline: none;
+    }
+
+.mensaje{
+    height: 555px;
+    background: white;
+    background-image: url("ImagenesEncriptador/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 200px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+}
+.mensaje:focus {
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn-desencriptar {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.btn-encriptar {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.copiar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 240px;
+    margin-top: 505px;
+    position: absolute;
+    width: 336px;
+
+}
+
+.informacion {
+    color: #495057;
+    font-size:18px;
+}
+
+.contenedor{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width:480px){
+
+    .logo{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 40px;
+        padding: 30px 0 0 20px;
+        margin-left: 10px;
+        width: 30%;
+        margin-bottom: auto;
+
+    }
+    main{
+        display: block;
+        margin: 30px 0 10px;
+    }
+
+    .text-area, .informacion{
+        text-align: center;
+        width: 90%; 
+        height: 200px;  
+        margin-left: 20px;
+    }
+
+    .botones .copiar{
+        height: 67px;
+        margin-left: 20px;
+        width: 90%;
+    }
+
+    .informacion{
+        text-align: center;
+        height: 40px;
+        line-height: 20px;
+    }
+
+    .btn-encriptar, .btn-desencriptar, .copiar{
+        font-size: 18px;
+        margin-left: 10px;
+
+    }
+
+    .mensaje{
+        position: relative;
+        display: block;
+        margin-left: 8px;
+        width: 90%;
+        height: 280px;
+        text-align: center;
+    }
+
+    .copiar{
+        position: relative;
+        margin-left: 8%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    
+    
+
+    .contenedor{ 
+        margin-top: .1em;
+        margin-bottom: 1em;
+    }
+
+    a{
+        position: relative;
+    }
+
+    
+
+
+ }
